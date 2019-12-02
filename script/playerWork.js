@@ -12,8 +12,9 @@ let trackIndex
 const artworkPlaceHolder = document.querySelector('#artworkPlaceHolder')
 const loadedContent=document.querySelector('.loadedContent')
 const loadingScreen=document.querySelector('.loadingScreen')
+const videoLoaded=document.querySelector('.videoLoaded')
 
-window.addEventListener('load',()=>{
+videoLoaded.addEventListener('loadeddata',()=>{
     loadedContent.classList.add('allLoaded')
     loadingScreen.style.display="none"
     console.log("loaded")
