@@ -528,7 +528,6 @@ ambianceRoomButton.addEventListener('mousedown', () => {
     videoContainer.classList.add('switchVideo')
     nextOne.style.opacity = 0
     pastOne.style.opacity = 0
-    document.querySelector('.radioButtons').style.transform = ' translateX(15px)'
 
     for (let element of audio) {
         element.pause()
