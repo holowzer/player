@@ -10,7 +10,12 @@ const pastOne = document.querySelector('#pastOne')
 const nextOne = document.querySelector('#nextOne')
 let trackIndex
 const artworkPlaceHolder = document.querySelector('#artworkPlaceHolder')
+const body=document.querySelector('body')
 
+window.addEventListener('load',()=>{
+    body.classList.add('allLoaded')
+    console.log("loaded")
+})
 
 // the constructor for all the track's infos
 class Song {

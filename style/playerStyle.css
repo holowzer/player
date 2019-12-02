@@ -17,6 +17,11 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    opacity: 0;
+    transition: 0.5s all ease-in;
+}
+.allLoaded{
+    opacity: 1;
 }
 
 .videoScreen {
