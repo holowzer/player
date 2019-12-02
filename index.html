@@ -13,182 +13,193 @@
 </head>
 
 <body>
-    <audio preload="auto" class="js-audio0 playlistMusic" name="You and i - Jacob Collier" artwork="img/jacob.jpg"
-        src="music/you-and-i-audio-jacob-collier.mp3"></audio>
-    <audio preload="auto" class="js-audio1 playlistMusic" name="Summer Walker - Session 32"
-        artwork="img/summerwalker.jpg" src="music/summer-walker-session-32-audio.mp3"></audio>
-    <audio preload="auto" class="js-audio2 playlistMusic" name="Amber Mark - Mixer(Acoustic)" artwork="img/amber.jpg"
-        src="music/amber-mark-mixer-acoustic.mp3"></audio>
-    <audio preload="auto" class="js-audio3 playlistMusic" name="VERZACHE - Too high" artwork="img/verza.jpg"
-        src="music/VERZACHE - too high.mp3"></audio>
-    <audio preload="auto" class="js-audio4 playlistMusic" name="Hush forte - Summer girl" artwork="img/summerGirl.jpg"
-        src="music/hush-forte-summer-girl-ft-q.mp3"></audio>
-    <audio preload="auto" class="js-audio5 playlistMusic" name="Medasin - At fault" artwork="img/medasin.jpg"
-        src="music/medasinXfelly at fault.mp3"></audio>
-    <audio preload="auto" class="js-audio6 playlistMusic" name="Spooky - Dusty Springfield" artwork="img/spooky.jpg"
-        src="music/dusty-springfield-spooky.mp3"></audio>
-    <audio preload="auto" class="js-audio7 playlistMusic" name="Japanese Denim - Stranger cover"
-        artwork="img/daniel.png" src="music/japanese-denim-cover-by-rini.mp3"></audio>
-    <audio preload="auto" class="js-audio8 playlistMusic" name="LAUV - Paris in the rain" artwork="img/paris.jpg"
-        src="music/lauv-paris-in-the-rain-lyric-video.mp3"></audio>
-    <audio src="music/car noise.mp3" loop name="Falling rain on the car's window" artwork="img/carRain.jfif"
-        class="carRain ambianceNoise"></audio>
-    <audio src="music/rain-noise.mp3" loop name="rainy street" artwork="img/rainart.jfif"
-        class="rain ambianceNoise"></audio>
-    <audio src="music/airplane-cabin-white-noise.mp3" loop name="airplane cabin noises" artwork="img/flight.jfif"
-        class="flight ambianceNoise"></audio>
+    <div class="loadingScreen">
+        <img id="logoLoading" src="img/logoPNG.png" alt="">
 
-
-    <div class="videoScreen">
-        <div class="videoContainer">
-            <video class="videoScreenPlayer" autoplay loop muted src="img/neon_Trim.mp4">
-            </video>
-            <video autoplay loop muted class="videoScreenPlayer" src="img/rain_Trim.mp4"></video>
-        </div>
-        <img src="img/radiologo.png" alt="" class="logoRadio">
-        <div class="menuOpener">
-            <span class="flaticon-menu">
-            </span>
-        </div>
-        <div class="sideMenu slideInMenu">
-            <div class="menuHeader">
-                <div class="menuCloser">
-                    <span class="flaticon-menu">
-
-                    </span>
-                </div>
-                <div class="name">
-                    <h1>MORNING COFFEE RADIO</h1>
-                </div>
-            </div>
-            <div class=" playlistChange">
-                <div class="musicRoomButton">
-                    <h2>Musique Room</h2>
-                </div>
-                <div class="ambianceRoomButton bypassedCategory">
-                    <h2>Ambiance Room</h2>
-                </div>
-            </div>
-            <div class="futureTracks">
-
-                <!-- the track propositions are going to be placed here by the html -->
-
-            </div>
-            <div class="futureAmbiances">
-
-                <!-- the track propositions are going to be placed here by the html -->
-
-            </div>
-            <div class="whosBehind">
-                <svg id="settingsButton" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50"
-                    width="30px" height="50px">
-                    <path
-                        d="M47.16,21.221l-5.91-0.966c-0.346-1.186-0.819-2.326-1.411-3.405l3.45-4.917c0.279-0.397,0.231-0.938-0.112-1.282 l-3.889-3.887c-0.347-0.346-0.893-0.391-1.291-0.104l-4.843,3.481c-1.089-0.602-2.239-1.08-3.432-1.427l-1.031-5.886 C28.607,2.35,28.192,2,27.706,2h-5.5c-0.49,0-0.908,0.355-0.987,0.839l-0.956,5.854c-1.2,0.345-2.352,0.818-3.437,1.412l-4.83-3.45 c-0.399-0.285-0.942-0.239-1.289,0.106L6.82,10.648c-0.343,0.343-0.391,0.883-0.112,1.28l3.399,4.863 c-0.605,1.095-1.087,2.254-1.438,3.46l-5.831,0.971c-0.482,0.08-0.836,0.498-0.836,0.986v5.5c0,0.485,0.348,0.9,0.825,0.985 l5.831,1.034c0.349,1.203,0.831,2.362,1.438,3.46l-3.441,4.813c-0.284,0.397-0.239,0.942,0.106,1.289l3.888,3.891 c0.343,0.343,0.884,0.391,1.281,0.112l4.87-3.411c1.093,0.601,2.248,1.078,3.445,1.424l0.976,5.861C21.3,47.647,21.717,48,22.206,48 h5.5c0.485,0,0.9-0.348,0.984-0.825l1.045-5.89c1.199-0.353,2.348-0.833,3.43-1.435l4.905,3.441 c0.398,0.281,0.938,0.232,1.282-0.111l3.888-3.891c0.346-0.347,0.391-0.894,0.104-1.292l-3.498-4.857 c0.593-1.08,1.064-2.222,1.407-3.408l5.918-1.039c0.479-0.084,0.827-0.5,0.827-0.985v-5.5C47.999,21.718,47.644,21.3,47.16,21.221z M25,32c-3.866,0-7-3.134-7-7c0-3.866,3.134-7,7-7s7,3.134,7,7C32,28.866,28.866,32,25,32z" />
-                </svg>
-                <svg id="infoButton" height="30px" viewBox="0 0 512 512" width="30px" xmlns="http://www.w3.org/2000/svg"
-                    style="fill: white;">
-                    <path
-                        d="m453.332031 0h-394.664062c-32.363281 0-58.667969 26.304688-58.667969 58.667969v394.664062c0 32.363281 26.304688 58.667969 58.667969 58.667969h394.664062c32.363281 0 58.667969-26.304688 58.667969-58.667969v-394.664062c0-32.363281-26.304688-58.667969-58.667969-58.667969zm-197.332031 106.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031-21.332031-9.554687-21.332031-21.332031 9.554687-21.332031 21.332031-21.332031zm48 298.664062h-96c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h26.667969v-128h-16c-11.777344 0-21.335938-9.558594-21.335938-21.335938 0-11.773437 9.558594-21.332031 21.335938-21.332031h37.332031c11.777344 0 21.332031 9.558594 21.332031 21.332031v149.335938h26.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" />
-                </svg>
-            </div>
-        </div>
 
     </div>
-    <div class="lofiMusicPlayer">
-        <div class="lofiContainer ">
-            <div class="lofiCover">
-                <img id="artworkPlaceHolder" src="" alt="" srcset="">
+    <div class="loadedContent">
+        <audio preload="auto" class="js-audio0 playlistMusic" name="You and i - Jacob Collier" artwork="img/jacob.jpg"
+            src="music/you-and-i-audio-jacob-collier.mp3"></audio>
+        <audio preload="auto" class="js-audio1 playlistMusic" name="Summer Walker - Session 32"
+            artwork="img/summerwalker.jpg" src="music/summer-walker-session-32-audio.mp3"></audio>
+        <audio preload="auto" class="js-audio2 playlistMusic" name="Amber Mark - Mixer(Acoustic)"
+            artwork="img/amber.jpg" src="music/amber-mark-mixer-acoustic.mp3"></audio>
+        <audio preload="auto" class="js-audio3 playlistMusic" name="VERZACHE - Too high" artwork="img/verza.jpg"
+            src="music/VERZACHE - too high.mp3"></audio>
+        <audio preload="auto" class="js-audio4 playlistMusic" name="Hush forte - Summer girl"
+            artwork="img/summerGirl.jpg" src="music/hush-forte-summer-girl-ft-q.mp3"></audio>
+        <audio preload="auto" class="js-audio5 playlistMusic" name="Medasin - At fault" artwork="img/medasin.jpg"
+            src="music/medasinXfelly at fault.mp3"></audio>
+        <audio preload="auto" class="js-audio6 playlistMusic" name="Spooky - Dusty Springfield" artwork="img/spooky.jpg"
+            src="music/dusty-springfield-spooky.mp3"></audio>
+        <audio preload="auto" class="js-audio7 playlistMusic" name="Japanese Denim - Stranger cover"
+            artwork="img/daniel.png" src="music/japanese-denim-cover-by-rini.mp3"></audio>
+        <audio preload="auto" class="js-audio8 playlistMusic" name="LAUV - Paris in the rain" artwork="img/paris.jpg"
+            src="music/lauv-paris-in-the-rain-lyric-video.mp3"></audio>
+        <audio src="music/car noise.mp3" loop name="Falling rain on the car's window" artwork="img/carRain.jfif"
+            class="carRain ambianceNoise"></audio>
+        <audio src="music/rain-noise.mp3" loop name="rainy street" artwork="img/rainart.jfif"
+            class="rain ambianceNoise"></audio>
+        <audio src="music/airplane-cabin-white-noise.mp3" loop name="airplane cabin noises" artwork="img/flight.jfif"
+            class="flight ambianceNoise"></audio>
+
+
+        <div class="videoScreen">
+            <div class="videoContainer">
+                <video class="videoScreenPlayer" autoplay loop muted src="img/neon_Trim.mp4">
+                </video>
+                <video autoplay loop muted class="videoScreenPlayer" src="img/rain_Trim.mp4"></video>
             </div>
-            <div class="trackInfo">
-                <div class="musicName">--:--</div>
-                <div class="timer">
-                    <div class="timeFill"></div>
+            <img src="img/radiologo.png" alt="" class="logoRadio">
+            <div class="menuOpener">
+                <span class="flaticon-menu">
+                </span>
+            </div>
+            <div class="sideMenu slideInMenu">
+                <div class="menuHeader">
+                    <div class="menuCloser">
+                        <span class="flaticon-menu">
+
+                        </span>
+                    </div>
+                    <div class="name">
+                        <h1>MORNING COFFEE RADIO</h1>
+                    </div>
                 </div>
-                <div class="radioButtons">
-                    <span id="pastOne" class="flaticon-left-arrow"></span>
-                    <span id="playMeButton" class="flaticon-play-button whiteIcon"></span>
-                    <span id="nextOne" class="flaticon-arrow-point-to-right"></span>
+                <div class=" playlistChange">
+                    <div class="musicRoomButton">
+                        <h2>Musique Room</h2>
+                    </div>
+                    <div class="ambianceRoomButton bypassedCategory">
+                        <h2>Ambiance Room</h2>
+                    </div>
+                </div>
+                <div class="futureTracks">
+
+                    <!-- the track propositions are going to be placed here by the html -->
+
+                </div>
+                <div class="futureAmbiances">
+
+                    <!-- the track propositions are going to be placed here by the html -->
+
+                </div>
+                <div class="whosBehind">
+                    <svg id="settingsButton" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50"
+                        width="30px" height="50px">
+                        <path
+                            d="M47.16,21.221l-5.91-0.966c-0.346-1.186-0.819-2.326-1.411-3.405l3.45-4.917c0.279-0.397,0.231-0.938-0.112-1.282 l-3.889-3.887c-0.347-0.346-0.893-0.391-1.291-0.104l-4.843,3.481c-1.089-0.602-2.239-1.08-3.432-1.427l-1.031-5.886 C28.607,2.35,28.192,2,27.706,2h-5.5c-0.49,0-0.908,0.355-0.987,0.839l-0.956,5.854c-1.2,0.345-2.352,0.818-3.437,1.412l-4.83-3.45 c-0.399-0.285-0.942-0.239-1.289,0.106L6.82,10.648c-0.343,0.343-0.391,0.883-0.112,1.28l3.399,4.863 c-0.605,1.095-1.087,2.254-1.438,3.46l-5.831,0.971c-0.482,0.08-0.836,0.498-0.836,0.986v5.5c0,0.485,0.348,0.9,0.825,0.985 l5.831,1.034c0.349,1.203,0.831,2.362,1.438,3.46l-3.441,4.813c-0.284,0.397-0.239,0.942,0.106,1.289l3.888,3.891 c0.343,0.343,0.884,0.391,1.281,0.112l4.87-3.411c1.093,0.601,2.248,1.078,3.445,1.424l0.976,5.861C21.3,47.647,21.717,48,22.206,48 h5.5c0.485,0,0.9-0.348,0.984-0.825l1.045-5.89c1.199-0.353,2.348-0.833,3.43-1.435l4.905,3.441 c0.398,0.281,0.938,0.232,1.282-0.111l3.888-3.891c0.346-0.347,0.391-0.894,0.104-1.292l-3.498-4.857 c0.593-1.08,1.064-2.222,1.407-3.408l5.918-1.039c0.479-0.084,0.827-0.5,0.827-0.985v-5.5C47.999,21.718,47.644,21.3,47.16,21.221z M25,32c-3.866,0-7-3.134-7-7c0-3.866,3.134-7,7-7s7,3.134,7,7C32,28.866,28.866,32,25,32z" />
+                    </svg>
+                    <svg id="infoButton" height="30px" viewBox="0 0 512 512" width="30px"
+                        xmlns="http://www.w3.org/2000/svg" style="fill: white;">
+                        <path
+                            d="m453.332031 0h-394.664062c-32.363281 0-58.667969 26.304688-58.667969 58.667969v394.664062c0 32.363281 26.304688 58.667969 58.667969 58.667969h394.664062c32.363281 0 58.667969-26.304688 58.667969-58.667969v-394.664062c0-32.363281-26.304688-58.667969-58.667969-58.667969zm-197.332031 106.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031-21.332031-9.554687-21.332031-21.332031 9.554687-21.332031 21.332031-21.332031zm48 298.664062h-96c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h26.667969v-128h-16c-11.777344 0-21.335938-9.558594-21.335938-21.335938 0-11.773437 9.558594-21.332031 21.335938-21.332031h37.332031c11.777344 0 21.332031 9.558594 21.332031 21.332031v149.335938h26.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" />
+                    </svg>
                 </div>
             </div>
 
         </div>
-    </div>
-    <div class="greyBg">
-        <div class="settings">
-            <div class="infoHead">
-                <h3 id="settingsAway">X</h3>
-            </div>
-            <div class="centerVolume">
-                <div class="volumeWindow">
-                    <h3>Réglez le volume</h3>
-                    <div class="volumeBar">
-                        <div class="volumeFillBar"></div>
+        <div class="lofiMusicPlayer">
+            <div class="lofiContainer ">
+                <div class="lofiCover">
+                    <img id="artworkPlaceHolder" src="" alt="" srcset="">
+                </div>
+                <div class="trackInfo">
+                    <div class="musicName">--:--</div>
+                    <div class="timer">
+                        <div class="timeFill"></div>
+                    </div>
+                    <div class="radioButtons">
+                        <span id="pastOne" class="flaticon-left-arrow"></span>
+                        <span id="playMeButton" class="flaticon-play-button whiteIcon"></span>
+                        <span id="nextOne" class="flaticon-arrow-point-to-right"></span>
                     </div>
                 </div>
+
             </div>
-            <div class="centerVolume">
-                <div class="ambianceWindow">
-                    <h3>Changez l'ambiance</h3>
-                    <div class="slomo ambianceButton">
-                        Slowmo mode
-                    </div>
-                    <div class="normal ambianceButton">
-                        Normal mode
-                    </div>
-
-                    <div class="speedUp ambianceButton">
-                        Speed Up mode
-                    </div>
-                </div>
-            </div>
-
-
         </div>
-    </div>
+        <div class="greyBg">
+            <div class="settings">
+                <div class="infoHead">
+                    <h3 id="settingsAway">X</h3>
+                </div>
+                <div class="centerVolume">
+                    <div class="volumeWindow">
+                        <h3>Réglez le volume</h3>
+                        <div class="volumeBar">
+                            <div class="volumeFillBar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerVolume">
+                    <div class="ambianceWindow">
+                        <h3>Changez l'ambiance</h3>
+                        <div class="slomo ambianceButton">
+                            Slowmo mode
+                        </div>
+                        <div class="normal ambianceButton">
+                            Normal mode
+                        </div>
 
-    <div class="blackBg">
-        <div class="info">
-            <div class="infoHead">
-                <h3 id="infoAway">X</h3>
+                        <div class="speedUp ambianceButton">
+                            Speed Up mode
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="readMeNow">
-                <h3>readme</h3>
-                <p>THE CONCEPT <br><br>
-                        this website is a radio station that broadcasts quiet audio content for productive work sessions! <br><br>
-                        
-                        two modes are available for you. the first is the musique room and the other one is the ambiance room (with background noises or white noises)
+        </div>
+
+        <div class="blackBg">
+            <div class="info">
+                <div class="infoHead">
+                    <h3 id="infoAway">X</h3>
+                </div>
+                <div class="readMeNow">
+                    <h3>readme</h3>
+                    <p>THE CONCEPT <br><br>
+                        this website is a radio station that broadcasts quiet audio content for productive work
+                        sessions! <br><br>
+
+                        two modes are available for you. the first is the musique room and the other one is the ambiance
+                        room (with background noises or white noises)
                         you have the choice! <br><br><br><br>
-                        
+
                         THE FEATURES <br><br>
 
-                        !!! the option to upload your own file on the playlist will be achieved for my portfolio but is not workking yet !!!<br><br>
+                        !!! the option to upload your own file on the playlist will be achieved for my portfolio but is
+                        not workking yet !!!<br><br>
 
-                        
-                        complete sound adjustment: time with seekbar volume and speed of sound in the parameters, next or previous  track, play button, play pause control with space bar etc...
+
+                        complete sound adjustment: time with seekbar volume and speed of sound in the parameters, next
+                        or previous track, play button, play pause control with space bar etc...
                         <br><br>
                         the playlist is created in object orientated as well as the player.
                         <br><br>
-                        the player and the other parts of the site are responsive on  phones too <br><br>
+                        the player and the other parts of the site are responsive on phones too <br><br>
                         You can close the opened options and info by clicking outside them !
                         <br><br><br><br>
                         INSPIRATION<br><br>
                         made from scratch
                         <br><br><br><br>
-                        
-                        
-                        
-                       </p>
-            </div>
 
-            <div class="upload">
-                <h3>Ajoutez vos musiques dans la playlist</h3>
-                <input type="file" name="upload your song" id="uploadSong">
+
+
+                    </p>
+                </div>
+
+                <div class="upload">
+                    <h3>Ajoutez vos musiques dans la playlist</h3>
+                    <input type="file" name="upload your song" id="uploadSong">
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="script/menuInteraction.js"></script>
-    <script src="script/playerWork.js"></script>
+        <script src="script/menuInteraction.js"></script>
+        <script src="script/playerWork.js"></script>
+    </div>
 </body>
 
 </html>

@@ -17,11 +17,6 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    opacity: 0;
-    transition: 0.5s all ease-in;
-}
-.allLoaded{
-    opacity: 1;
 }
 
 .videoScreen {
@@ -614,4 +609,27 @@ h1 {
         overflow-y: scroll;
         padding: 0px;
     }
+}
+
+.loadingScreen{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+#logoLoading{
+    width: 80px;
+    height: auto;
+    animation: linear loopMe 2s infinite ;
+    transform-origin: center;
+}
+.loadedContent{
+    opacity: 0;
+    transition: 0.5s all ease-in;
+
+}
+.allLoaded{
+    opacity: 1;
 }

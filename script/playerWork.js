@@ -10,10 +10,12 @@ const pastOne = document.querySelector('#pastOne')
 const nextOne = document.querySelector('#nextOne')
 let trackIndex
 const artworkPlaceHolder = document.querySelector('#artworkPlaceHolder')
-const body=document.querySelector('body')
+const loadedContent=document.querySelector('.loadedContent')
+const loadingScreen=document.querySelector('.loadingScreen')
 
 window.addEventListener('load',()=>{
-    body.classList.add('allLoaded')
+    loadedContent.classList.add('allLoaded')
+    loadingScreen.style.display="none"
     console.log("loaded")
 })
 
