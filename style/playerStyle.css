@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+span {
+    transition: all ease 0.5s;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.videoScreen {
+    width: 200vw;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+
+}
+
+.videoContainer {
+    display: flex;
+    transition: 2s cubic-bezier(0.19, 1, 0.22, 1) all;
+
+    justify-content: flex-start;
+    transform: translateX(0vw);
+    flex-direction: row;
+
+}
+
+.switchVideo {
+    transform: translateX(-100vw);
+}
+
+.videoScreenPlayer {
+    width: 100vw;
+    height: auto;
+}
+
+.lofiMusicPlayer {
+    position: absolute;
+    right: -90px;
+    border-radius: 90px;
+    top: 50%;
+    margin-top: -100px;
+    background: rgba(0, 0, 0, 0.857);
+    width: 600px;
+    height: 200px;
+}
+
+.whiteIcon {
+    color: white;
+    display: inline;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.logoRadio {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    animation: wavyLogo 8s linear infinite;
+    left: 50%;
+    margin-left: -155px;
+}
+
+@keyframes wavyLogo {
+    0% {
+        transform: skewX(-4deg) skewY(-5deg);
+    }
+
+    50% {
+        transform: skewX(12deg) skewY(4deg);
+
+    }
+
+    100% {
+        transform: skewX(-4deg) skewY(-5deg);
+    }
+
+}
+
+.radioButtons {
+    height: 40px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.lofiCover img {
+    width: 100px;
+    height: auto;
+}
+
+.lofiContainer {
+    height: 100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    top: 50%;
+    left: 64px;
+    width: 400px;
+    margin-top: -50px;
+}
+
+
+.trackInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.titleOfTrack {
+    width: 140px;
+}
+
+.timer {
+    height: 8px;
+    width: 170px;
+    border-radius: 4px;
+    margin: 10px 0 16px 0;
+    color: white;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative;
+}
+
+.timeFill {
+    height: 8px;
+    position: absolute;
+    width: 170px;
+    background: rgb(67, 38, 231);
+    transform: translateX(-170px);
+    pointer-events: none;
+}
+
+.musicName {
+    height: 40px;
+    color: white;
+    width: 165px;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+/* sidemenu  */
+
+.sideMenu {
+    position: absolute;
+    width: 30vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.735);
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.9s cubic-bezier(0.23, 0.9, 0.120, 1);
+}
+
+.slideInMenu {
+    transform: translateX(-30vw);
+}
+
+.menuHeader {
+    height: 16vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+}
+
+.playlistChange {
+    height: 10vh;
+}
+
+.futureTracks {
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+
+}
+
+.futureTracks::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.futureAmbiances {
+    height: 60vh;
+    overflow-y: scroll;
+    display: none;
+    overflow-x: hidden;
+
+}
+
+.futureAmbiances::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.whosBehind {
+    height: 14vh;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menuOpener {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 0, 255);
+    top: 0;
+    left: 0;
+    transition: 0.2s ease-in all;
+    animation: menuHalo 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menuOpener span::before {
+    color: white;
+    margin: 0;
+    pointer-events: none;
+}
+
+.playNext {
+    margin: 10px;
+}
+
+.menuCloser {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menuCloser span::before {
+    color: white;
+    margin: 0 10px;
+    pointer-events: none;
+}
+
+.playlistChange {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.playlistChange div {
+    color: white;
+    font-size: 0.8em;
+    background: rgba(5, 51, 255, 0.87);
+    width: 39%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackId {
+    height: 9vh;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto;
+    color: white;
+    border-radius: 7px;
+    background: linear-gradient(122deg, rgb(133, 7, 7) 19%, rgb(0, 26, 139) 99%);
+    transition: cubic-bezier(0.49, 0.7, 0.12, 1) 0.4s all;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.trackId:hover {
+    opacity: 0.5;
+}
+
+.ambianceNoise {
+    height: 9vh;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto;
+    color: white;
+    border-radius: 7px;
+    background: linear-gradient(122deg, rgb(133, 7, 7) 19%, rgb(0, 26, 139) 99%);
+    transition: cubic-bezier(0.49, 0.7, 0.12, 1) 0.4s all;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ambianceNoise:hover {
+    opacity: 0.5;
+}
+
+.hideStyleMusic {
+    transform: translateX(800px);
+    opacity: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Alatsi', sans-serif;
+    position: absolute;
+    width: 260px;
+    bottom: 12px;
+    left: 50%;
+    margin-left: -130px;
+    font-style: normal;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+.bypassedCategory {
+    background: rgb(14, 16, 47) !important;
+}
+
+
+/* videoanimations */
+#settingsButton {
+    animation: loopMe 2s infinite linear;
+    transform-origin: center;
+}
+
+.blacked {
+    transform: translateX(-100vw);
+    position: absolute;
+}
+
+.iconBottomWhite {
+    color: white;
+}
+
+.info {
+    width: 550px;
+    height: 550px;
+    background: rgba(14, 14, 14, 0.857);
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.readMeNow {
+    height: 320px;
+    margin: 30px;
+    overflow-y: scroll;
+    padding: 0 50px;
+}
+
+.blackBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.571);
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+.upload h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.greyBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.571);
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings {
+    width: 650px;
+    height: 350px;
+    background: rgba(14, 14, 14, 0.857);
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.volumeBar {
+    width: 200px;
+    height: 10px;
+    background: blue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.volumeFillBar {
+    transform: translateX(-200px);
+    background: white;
+    width: 200px;
+    height: 10px;
+
+}
+
+.volumeWindow {
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.ambianceWindow {
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.centerVolume {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.volumeWindow h3 {
+    margin: 0 34px 0 0;
+}
+
+#settingsAway,
+#infoAway {
+    font-size: 1.6em;
+}
+
+
+.ambianceButton {
+    width: 150px;
+    background: linear-gradient(122deg, rgb(133, 7, 7) 19%, rgb(0, 26, 139) 99%);
+    height: 50px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-out all;
+    opacity: 1;
+    margin: 10px;
+}
+
+.ambianceButton:hover {
+    opacity: 0.4;
+}
+
+@keyframes loopMe {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* responsive part */
+@media screen and (max-width:450px) {
+    html{
+        overflow: hidden;
+    }
+    .videoScreenPlayer {
+        height: 100vh;
+        width: auto;
+    }
+
+    .lofiMusicPlayer {
+        position: absolute;
+        right: 50%;
+        border-radius: 40px;
+        top: unset;
+        bottom: 0;
+        margin-top: 0;
+        background: rgba(0, 0, 0, 0);
+        width: 300px;
+        height: 100px;
+    }
+
+    .lofiContainer {
+        height: 100px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        top:unset;
+        left: 50%;
+        width: 320px;
+        margin-top: -50px;
+    }
+    .sideMenu {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.735);
+        left: 0;
+        top: 0;
+        display: flex;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.9s cubic-bezier(0.23, 0.9, 0.120, 1);
+    }
+    .slideInMenu {
+        transform: translateX(-100vw);
+    }
+    .greyBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 101;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.571);
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .ambianceWindow {
+        width: 600px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .centerVolume {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .settings {
+        width: 90vw;
+        height: 90vh;
+        background: rgba(14, 14, 14, 0.857);
+        color: white;
+        display: block;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .blackBg{
+        z-index: 102;
+    }    
+    .info {
+        width: 90vw;
+        height: 90vh;
+        background: rgba(14, 14, 14, 0.857);
+        color: white;
+        display: block;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .readMeNow {
+        height: 60vh;
+        margin: 10px;
+        overflow-y: scroll;
+        padding: 0px;
+    }
+}
