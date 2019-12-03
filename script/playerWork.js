@@ -10,9 +10,9 @@ const pastOne = document.querySelector('#pastOne')
 const nextOne = document.querySelector('#nextOne')
 let trackIndex
 const artworkPlaceHolder = document.querySelector('#artworkPlaceHolder')
-const loadedContent=document.querySelector('.loadedContent')
-const loadingScreen=document.querySelector('.loadingScreen')
-const videoLoaded=document.querySelector('.videoLoaded')
+// const loadedContent=document.querySelector('.loadedContent')
+// const loadingScreen=document.querySelector('.loadingScreen')
+// const videoLoaded=document.querySelector('.videoLoaded')
 
 // videoLoaded.addEventListener('loadeddata',()=>{
 //     loadedContent.classList.add('allLoaded')

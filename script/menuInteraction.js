@@ -12,3 +12,13 @@ menuButtonOff.addEventListener('click', () => {
     menuButtonOn.style.opacity = 1
 
 })
+
+const loadedContent=document.querySelector('.loadedContent')
+const loadingScreen=document.querySelector('.loadingScreen')
+const videoLoaded=document.querySelector('.videoLoaded')
+
+videoLoaded.addEventListener('loadeddata',()=>{
+    loadedContent.classList.add('allLoaded')
+    loadingScreen.style.display="none"
+    console.log("loaded")
+})
