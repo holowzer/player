@@ -61,7 +61,6 @@ class Song {
     }
 
 }
-
 // the constructor for all the track's infos
 class Ambiance {
     constructor(ambiance) {
