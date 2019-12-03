@@ -1,3 +1,16 @@
+const loadedContent=document.querySelector('.loadedContent')
+const loadingScreen=document.querySelector('.loadingScreen')
+const videoLoaded=document.querySelector('.videoLoaded')
+
+videoLoaded.addEventListener('loadedmetadata',()=>{
+    loadedContent.classList.add('allLoaded')
+    loadingScreen.style.display="none"
+    console.log("loaded")
+})
+
+
+
+
 const menu = document.querySelector('.sideMenu')
 const menuButtonOn = document.querySelector('.menuOpener')
 const menuButtonOff = document.querySelector('.menuCloser')
@@ -13,12 +26,3 @@ menuButtonOff.addEventListener('click', () => {
 
 })
 
-const loadedContent=document.querySelector('.loadedContent')
-const loadingScreen=document.querySelector('.loadingScreen')
-const videoLoaded=document.querySelector('.videoLoaded')
-
-videoLoaded.addEventListener('loadeddata',()=>{
-    loadedContent.classList.add('allLoaded')
-    loadingScreen.style.display="none"
-    console.log("loaded")
-})
