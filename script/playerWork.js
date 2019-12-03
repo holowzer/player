@@ -14,11 +14,11 @@ const loadedContent=document.querySelector('.loadedContent')
 const loadingScreen=document.querySelector('.loadingScreen')
 const videoLoaded=document.querySelector('.videoLoaded')
 
-videoLoaded.addEventListener('loadeddata',()=>{
-    loadedContent.classList.add('allLoaded')
-    loadingScreen.style.display="none"
-    console.log("loaded")
-})
+// videoLoaded.addEventListener('loadeddata',()=>{
+//     loadedContent.classList.add('allLoaded')
+//     loadingScreen.style.display="none"
+//     console.log("loaded")
+// })
 
 // the constructor for all the track's infos
 class Song {
