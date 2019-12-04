@@ -2,7 +2,7 @@ const loadedContent=document.querySelector('.loadedContent')
 const loadingScreen=document.querySelector('.loadingScreen')
 const videoLoaded=document.querySelector('.videoLoaded')
 
-videoLoaded.addEventListener('loadedmetadata',()=>{
+window.addEventListener('load',()=>{
     loadedContent.classList.add('allLoaded')
     loadingScreen.style.display="none"
     console.log("loaded")
