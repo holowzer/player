@@ -8,7 +8,11 @@
     -ms-user-select: none;
     user-select: none;
 }
-
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 span {
     transition: all ease 0.5s;
 }
